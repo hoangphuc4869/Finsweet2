@@ -130,7 +130,7 @@ span {
   color: #f58a07;
 }
 @media (max-width: 739px) {
-  .navbar {
+  */ .navbar {
     display: none;
   }
 }
