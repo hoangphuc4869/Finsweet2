@@ -249,6 +249,7 @@ button {
   background-color: #dceaf5;
   margin: 10px auto;
   position: relative;
+  padding-bottom: 50px;
 }
 
 .ribbon {
@@ -263,12 +264,15 @@ button {
   display: flex;
   align-items: center;
   margin-left: 3rem;
-  justify-content: space-around;
+  margin-right: 3rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .service_header {
+  margin-left: 3rem;
   padding-top: 50px;
-  padding-left: 3rem;
+  margin-bottom: 50px;
 }
 
 .service_title {
@@ -278,6 +282,7 @@ button {
   line-height: 56px; /* 116.667% */
   letter-spacing: -1.44px;
   width: 90%;
+  margin-bottom: 20px;
 }
 
 .service_img img {
@@ -288,11 +293,29 @@ button {
   font-style: normal;
   font-weight: 500;
   line-height: 30px; /* 166.667% */
-  width: 60%;
-  margin-bottom: 30px;
+  width: 80%;
+  margin-bottom: 50px;
 }
+
 span {
   color: #f58a07;
+}
+
+.service_header .bt1 {
+  background-color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  border: none;
+  color: #f58a07;
+}
+
+.service_header button {
+  color: #a8bccc;
+  background-color: #dceaf5;
+  border: 1px solid #a8bccc;
 }
 @media (max-width: 739px) {
   .navbar {
@@ -302,6 +325,54 @@ span {
   .feature {
     width: 550px;
   }
+  .cta_img {
+    flex-grow: 1;
+  }
+}
+
+.cta_content {
+  background-color: #f58a07;
+  flex-grow: 1;
+}
+.cta_text {
+  width: 100%;
+  font-size: 3rem;
+  margin-top: 100px;
+  padding-left: 100px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -1.44px;
+  color: #fff;
+}
+
+.cta_button {
+  margin-left: 100px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  padding: 20px 30px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106.5%; /* 17.04px */
+  text-transform: capitalize;
+}
+.CTA_section {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.abc {
+  background-color: #394149;
+  height: 1000px;
+}
+
+.cta_img {
+  width: 50%;
+}
+
+.cta_button {
+  background-color: #dceaf5;
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   .navbar,
