@@ -114,8 +114,8 @@ button {
 .help_title {
   color: #0d1317;
   font-size: 3rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  margin-bottom: 60px;
   width: 60%;
   font-weight: 600;
   line-height: 44px; /* 122.222% */
@@ -171,6 +171,104 @@ button {
   width: 100%;
 }
 
+.footer_section {
+  background-color: #063255;
+  width: 100%;
+}
+
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer_top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.footer_left {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -1.08px;
+  width: 30%;
+}
+
+.footer_left h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.other,
+.connect_more {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.other div,
+.connect_more div {
+  margin-bottom: 10px;
+}
+
+.connect_head,
+.com,
+.subscribe div {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.subscribe .type_email {
+  background-color: #fff;
+  width: 342px;
+  color: #9c9c9c;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+.subscribe .subscribe_button {
+  background-color: #f58a07;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.footer-bottom {
+  display: flex;
+  color: #fff;
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin: 30px auto;
+  padding-bottom: 30px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 1280px;
+}
+
+.allright {
+  margin-right: auto;
+}
+
 .item {
   /* padding: 30px; */
   margin-right: 20px;
@@ -196,6 +294,7 @@ button {
 }
 
 .container {
+  max-width: 1280px;
 }
 
 .flexbox-no-margin .row {
@@ -341,9 +440,6 @@ span {
   .feature {
     width: 550px;
   }
-  .cta_img {
-    flex-grow: 1;
-  }
 }
 
 .cta_content {
@@ -351,7 +447,7 @@ span {
   flex-grow: 1;
 }
 .cta_text {
-  width: 100%;
+  max-width: 640px;
   font-size: 3rem;
   margin-top: 100px;
   padding-left: 100px;
@@ -375,11 +471,12 @@ span {
 }
 .CTA_section {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .cta_img {
-  width: 50%;
+  max-width: 640px;
+  /* flex: 1; */
 }
 
 .cta_button {
