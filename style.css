@@ -47,6 +47,11 @@ button {
   color: #fff;
 }
 
+.bt1,
+.bt {
+  margin-bottom: 10px;
+}
+
 .header_content #bt2 {
   background-color: #dceaf5;
   color: #1d3444;
@@ -123,8 +128,8 @@ button {
 .help_title {
   color: #0d1317;
   font-size: 3rem;
-
-  width: 60%;
+  margin-bottom: 50px;
+  width: 100%;
   font-weight: 600;
   line-height: 44px; /* 122.222% */
   letter-spacing: -1.08px;
@@ -461,7 +466,7 @@ span {
   max-width: 640px;
   font-size: 3rem;
   margin-top: 100px;
-  padding-left: 100px;
+  margin-left: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: 56px; /* 116.667% */
@@ -470,7 +475,7 @@ span {
 }
 
 .cta_button {
-  margin-left: 100px;
+  margin-left: 50px;
   margin-bottom: 100px;
   margin-top: 30px;
   padding: 20px 30px;
@@ -579,6 +584,72 @@ span {
 .blog .blog_image {
   width: 100%;
 }
+.navbar_btn {
+  display: none;
+}
+
+.nav_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: Fadein linear 0.2s;
+}
+
+.nav_mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+
+  transition: all linear 0.2s;
+}
+
+.mobile_list {
+  margin-top: 24px;
+}
+
+.nav_mobile_link a {
+  color: #0d1317;
+  display: block;
+  padding: 8px 0;
+}
+
+.navbar_close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 30px;
+  height: 30px;
+}
+
+.nav_mobile_input:checked ~ .nav_overlay {
+  display: block;
+}
+
+.nav_mobile_input:checked ~ .nav_mobile {
+  transform: translateX(0%);
+}
+
+.nav_mobile_input {
+  display: none;
+}
+
+@keyframes Fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .navbar,
@@ -586,7 +657,9 @@ span {
   .feature,
   .header,
   .about_section,
-  .service_section {
+  .service_section,
+  .CTA_section,
+  .ceo_section {
     width: 644px;
   }
 
@@ -653,7 +726,7 @@ span {
   .service_img {
     order: 1;
   }
-  .service_img img {
+  .service_img {
     width: 100%;
   }
 
@@ -661,6 +734,26 @@ span {
     width: 90%;
     margin-top: 50px;
     order: 2;
+  }
+  .CTA_section {
+    width: 100%;
+  }
+  .cta_img {
+    width: 100%;
+  }
+  .ceo_section {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .ceo_image {
+    order: 1;
+  }
+  .ceo_content {
+    order: 3;
+    width: 100%;
+  }
+  .ceo_text {
+    width: 100%;
   }
 }
 
@@ -670,7 +763,9 @@ span {
   .feature,
   .header,
   .about_section,
-  .service_section {
+  .service_section,
+  .CTA_section,
+  .ceo_section {
     width: 900px;
   }
   .header {
@@ -736,18 +831,39 @@ span {
     margin-top: 50px;
     order: 2;
   }
+  .CTA_section {
+    width: 100%;
+  }
+
+  .ceo_section {
+    align-items: flex-start;
+  }
+  .ceo_content {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .ceo_img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 739px) {
-  .navbar {
+  .navbar_list {
     display: none;
   }
+  .navbar,
   .help,
   .feature,
   .header,
   .about_section,
-  .service_section {
+  .service_section,
+  .CTA_section,
+  .ceo_section {
     width: 500px;
+  }
+
+  .navbar_btn {
+    display: block;
   }
 
   .header {
@@ -818,6 +934,28 @@ span {
     margin-top: 50px;
     order: 2;
   }
+  .CTA_section {
+    width: 100%;
+  }
+  .cta_img {
+    width: 100%;
+  }
+  .ceo_section {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .ceo_img {
+    order: 1;
+    width: 100%;
+  }
+
+  .ceo_content {
+    order: 3;
+    width: 100%;
+  }
+  .ceo_text {
+    width: 100%;
+  }
 }
 
 @media (max-width: 599px) {
@@ -826,7 +964,9 @@ span {
   .feature,
   .header,
   .about_section,
-  .service_section {
+  .service_section,
+  .CTA_section,
+  .ceo_section {
     width: 300px;
   }
   .header {
@@ -873,5 +1013,26 @@ span {
     width: 90%;
     margin-top: 50px;
     order: 2;
+  }
+  .CTA_section {
+    width: 100%;
+  }
+  .cta_img {
+    width: 100%;
+  }
+  .ceo_section {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .ceo_image {
+    order: 1;
+    width: 100%;
+  }
+  .ceo_content {
+    order: 3;
+    width: 100%;
+  }
+  .ceo_text {
+    width: 100%;
   }
 }
