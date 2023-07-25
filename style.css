@@ -129,7 +129,7 @@ button {
   color: #0d1317;
   font-size: 3rem;
   margin-bottom: 50px;
-  width: 100%;
+  width: 70%;
   font-weight: 600;
   line-height: 44px; /* 122.222% */
   letter-spacing: -1.08px;
@@ -488,6 +488,7 @@ span {
 .CTA_section {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 100px;
 }
 
 .cta_img {
