@@ -400,6 +400,7 @@ button {
   margin-right: 3rem;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* width: 100%; */
 }
 
 .service_header {
@@ -418,8 +419,8 @@ button {
   margin-bottom: 20px;
 }
 
-.service_img img {
-  width: 100%;
+.service_img {
+  max-width: 100%;
 }
 .service_text {
   font-size: 1rem;
@@ -584,7 +585,8 @@ span {
   .help,
   .feature,
   .header,
-  .about_section {
+  .about_section,
+  .service_section {
     width: 644px;
   }
 
@@ -648,6 +650,15 @@ span {
   .about_img img {
     width: 100%;
   }
+  .service_img {
+    order: 1;
+  }
+
+  .service_content {
+    width: 90%;
+    margin-top: 50px;
+    order: 2;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1239px) {
@@ -655,7 +666,8 @@ span {
   .help,
   .feature,
   .header,
-  .about_section {
+  .about_section,
+  .service_section {
     width: 900px;
   }
   .header {
@@ -709,6 +721,15 @@ span {
   .about_img img {
     width: 100%;
   }
+  .service_img {
+    order: 1;
+  }
+
+  .service_content {
+    width: 90%;
+    margin-top: 50px;
+    order: 2;
+  }
 }
 
 @media (max-width: 739px) {
@@ -718,7 +739,8 @@ span {
   .help,
   .feature,
   .header,
-  .about_section {
+  .about_section,
+  .service_section {
     width: 500px;
   }
 
@@ -778,6 +800,16 @@ span {
   .about_img img {
     width: 100%;
   }
+  .service_img {
+    order: 1;
+    width: 100%;
+  }
+
+  .service_content {
+    width: 90%;
+    margin-top: 50px;
+    order: 2;
+  }
 }
 
 @media (max-width: 599px) {
@@ -785,7 +817,8 @@ span {
   .help,
   .feature,
   .header,
-  .about_section {
+  .about_section,
+  .service_section {
     width: 300px;
   }
   .header {
@@ -820,5 +853,15 @@ span {
   }
   .about_img img {
     width: 100%;
+  }
+  .service_img {
+    order: 1;
+    width: 100%;
+  }
+
+  .service_content {
+    width: 90%;
+    margin-top: 50px;
+    order: 2;
   }
 }
