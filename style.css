@@ -653,6 +653,9 @@ span {
   .service_img {
     order: 1;
   }
+  .service_img img {
+    width: 100%;
+  }
 
   .service_content {
     width: 90%;
@@ -723,6 +726,9 @@ span {
   }
   .service_img {
     order: 1;
+  }
+  .service_img img {
+    width: 100%;
   }
 
   .service_content {
@@ -802,6 +808,8 @@ span {
   }
   .service_img {
     order: 1;
+  }
+  .service_img img {
     width: 100%;
   }
 
@@ -856,6 +864,8 @@ span {
   }
   .service_img {
     order: 1;
+  }
+  .service_img img {
     width: 100%;
   }
 
