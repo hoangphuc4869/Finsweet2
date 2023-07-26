@@ -89,6 +89,7 @@ button {
   /* flex-wrap: wrap; */
   width: 1280px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .header .header_img {
@@ -243,7 +244,7 @@ button {
   color: #fff;
   justify-content: flex-end;
   margin-top: 30px;
-  margin: 30px auto;
+  margin: 0 auto;
   padding-bottom: 30px;
   font-family: Poppins;
   font-size: 16px;
@@ -938,6 +939,15 @@ span {
   border-radius: 20px;
   margin-bottom: 30px;
 }
+.item1_2 {
+  background: #dceaf5;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.item1_2 .item_img {
+  width: 100%;
+}
 .help_title {
   color: #1d3444;
 
@@ -984,6 +994,10 @@ span {
 }
 .all_posts_wrapper {
   background: #dceaf5;
+}
+
+.all_posts_wrapper2 {
+  background: #fff;
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
