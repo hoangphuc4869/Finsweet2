@@ -131,32 +131,69 @@ button {
   margin-bottom: 20px;
 }
 
-.feature_section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #dceaf5;
-}
-
-.feature_section .container {
-  background-color: #dceaf5;
-}
-.feature {
-  width: 1280px;
-  margin: 10px auto;
-  margin-bottom: 50px;
-  display: flex;
-}
-
-.feature_title {
+.feature_wrapper {
+  background: #edf7ff;
   width: 100%;
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 44px; /* 122.222% */
-  letter-spacing: -1.08px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.fea_img {
+  height: 34px;
+}
+
+.feature_section {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.fea {
+  background-color: #fff;
+  margin-bottom: 20px;
 }
 
 .feature_content {
+  display: flex;
   width: 100%;
+  margin-bottom: 50px;
+}
+
+.feature_title {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px; /* 122.222% */
+  letter-spacing: -1.08px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.fea {
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+}
+.fea_title {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106.5%; /* 25.56px */
+  letter-spacing: -0.72px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.feature_text {
+  color: #1d3444;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
 }
 
 .footer_section {
@@ -1003,7 +1040,7 @@ span {
 @media (min-width: 740px) and (max-width: 1023px) {
   .navbar,
   .help_posts,
-  .feature,
+  .feature_section,
   .header,
   .about_section,
   .service_section,
@@ -1193,12 +1230,19 @@ span {
   .help_title {
     width: 100%;
   }
+  .feature_content {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .feature_title {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1239px) {
   .navbar,
   .help_posts,
-  .feature,
+  .feature_section,
   .header,
   .about_section,
   .service_section,
@@ -1357,6 +1401,9 @@ span {
   .blogs_page_heading_img img {
     width: 100%;
   }
+  .feature_content {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 739px) {
@@ -1365,7 +1412,7 @@ span {
   }
   .navbar,
   .help_posts,
-  .feature,
+  .feature_section,
   .header,
   .about_section,
   .service_section,
@@ -1551,12 +1598,19 @@ span {
   .help_title {
     width: 100%;
   }
+  .feature_content {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .feature_title {
+    width: 100%;
+  }
 }
 
 @media (max-width: 599px) {
   .navbar,
   .help_posts,
-  .feature,
+  .feature_section,
   .header,
   .about_section,
   .service_section,
@@ -1718,6 +1772,13 @@ span {
     margin-top: 10px;
   }
   .blogs_page_heading_img img {
+    width: 100%;
+  }
+  .feature_content {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .feature_title {
     width: 100%;
   }
 }
