@@ -769,6 +769,7 @@ span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 50px;
 }
 
 .author_name {
@@ -811,6 +812,56 @@ span {
   line-height: 28px; /* 175% */
   margin-bottom: 20px;
 }
+/* Privacy Page */
+.privacy_wrapper {
+  width: 1280px;
+  margin: 100px auto;
+}
+
+.privacy_policy {
+  width: 50%;
+  margin: 0 auto;
+}
+.privacy_policy_heading {
+  color: #1d3444;
+  font-family: Poppins;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px; /* 112.5% */
+  letter-spacing: -1.92px;
+}
+.date_modified {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.privacy_policy p {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+
+.privacy_policy_title {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.72px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .navbar,
@@ -824,7 +875,8 @@ span {
   .service_header,
   .service_feature,
   .blog_header_img,
-  .blog_page_content_wrapper {
+  .blog_page_content_wrapper,
+  .privacy_wrapper {
     width: 644px;
   }
 
@@ -971,6 +1023,9 @@ span {
   .blog_page_content_title {
     font-size: 4rem;
   }
+  .privacy_policy {
+    width: 90%;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1239px) {
@@ -985,11 +1040,9 @@ span {
   .service_header,
   .service_feature,
   .blog_header_img,
-  .blog_page_content_wrapper {
+  .blog_page_content_wrapper,
+  .privacy_wrapper {
     width: 900px;
-  }
-  .header {
-    /* flex-wrap: wrap; */
   }
 
   .header_content {
@@ -1134,7 +1187,8 @@ span {
   .service_header,
   .service_feature,
   .blog_header_img,
-  .blog_page_content_wrapper {
+  .blog_page_content_wrapper,
+  .privacy_wrapper {
     width: 500px;
   }
 
@@ -1282,6 +1336,9 @@ span {
   .blog_page_content_title {
     font-size: 3rem;
   }
+  .privacy_policy {
+    width: 90%;
+  }
 }
 
 @media (max-width: 599px) {
@@ -1296,7 +1353,8 @@ span {
   .service_header,
   .service_feature,
   .blog_header_img,
-  .blog_page_content_wrapper {
+  .blog_page_content_wrapper,
+  .privacy_wrapper {
     width: 300px;
   }
   .header {
@@ -1420,5 +1478,8 @@ span {
   }
   .blog_page_content_title {
     font-size: 3rem;
+  }
+  .privacy_policy {
+    width: 100%;
   }
 }
