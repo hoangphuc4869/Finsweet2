@@ -1037,6 +1037,56 @@ span {
   background: #fff;
 }
 
+/* Careers */
+.position_wrapper {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.positions {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.position_detail {
+  border-radius: 20px;
+  background: rgba(193, 228, 255, 0.3);
+  margin-bottom: 20px;
+  padding: 40px;
+}
+
+.position_name {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 125% */
+  letter-spacing: -0.72px;
+}
+
+.position_type {
+  color: #394149;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.position_title {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -1.44px;
+  margin-bottom: 50px;
+}
+
 @media (min-width: 740px) and (max-width: 1023px) {
   .navbar,
   .help_posts,
