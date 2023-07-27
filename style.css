@@ -14,6 +14,8 @@ body {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -31,8 +33,16 @@ a {
 .navbar_logo {
   margin-right: auto;
 }
+.navbar_list ul {
+  display: flex;
+}
 
-.navbar_list a {
+.navbar_right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_list ul a {
   padding-right: 20px;
   font-size: 1rem;
   color: #394149;
@@ -168,6 +178,7 @@ button {
   padding-bottom: 10px; */
   /* padding-right: 20px; */
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .last_item {
@@ -187,7 +198,7 @@ button {
   font-weight: 600;
   line-height: 44px; /* 122.222% */
   letter-spacing: -1.08px;
-  width: 90%;
+  width: 89%;
   margin-bottom: 20px;
 }
 
@@ -646,7 +657,7 @@ span {
 .nav_overlay {
   position: fixed;
   top: 0;
-  right: 0;
+  /* right: 0; */
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
@@ -658,12 +669,12 @@ span {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 0;
-  width: 320px;
+  left: 0;
+  width: 180px;
   max-width: 100%;
   background-color: #fff;
-  transform: translateX(100%);
-
+  transform: translateX(-100%);
+  z-index: 99999;
   transition: all linear 0.2s;
 }
 
@@ -674,7 +685,7 @@ span {
 .nav_mobile_link a {
   color: #0d1317;
   display: block;
-  padding: 8px 0;
+  padding: 8px 18px;
 }
 
 .navbar_close {
@@ -1144,6 +1155,11 @@ span {
   margin-bottom: 30px;
 }
 
+.team_img {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
 @media (min-width: 740px) and (max-width: 1023px) {
   .navbar,
   .help_posts,
@@ -1160,7 +1176,8 @@ span {
   .privacy_wrapper,
   .blogs_page_heading,
   .all_posts,
-  .positions {
+  .positions,
+  .team_section {
     width: auto;
   }
 
@@ -1217,7 +1234,7 @@ span {
     margin-top: 50px;
   }
   .feature_title {
-    width: 80%;
+    width: 89%;
   }
   .about_section {
     flex-wrap: wrap;
@@ -1361,6 +1378,17 @@ span {
   .feature_title {
     width: 100%;
   }
+  .blogs_page_wrapper {
+    background: #dceaf5;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .team_section_text {
+    width: 100%;
+  }
+  .team_section_title {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1239px) {
@@ -1379,7 +1407,8 @@ span {
   .privacy_wrapper,
   .blogs_page_heading,
   .all_posts,
-  .positions {
+  .positions,
+  .team_section {
     width: 900px;
   }
 
@@ -1529,10 +1558,16 @@ span {
   .feature_content {
     flex-wrap: wrap;
   }
+  .team_section_text {
+    width: 100%;
+  }
+  .team_section_title {
+    width: 100%;
+  }
 }
 
 @media (max-width: 739px) {
-  .navbar_list {
+  .navbar_right {
     display: none;
   }
   .navbar,
@@ -1550,7 +1585,8 @@ span {
   .privacy_wrapper,
   .blogs_page_heading,
   .all_posts,
-  .positions {
+  .positions,
+  .team_section {
     width: auto;
   }
 
@@ -1744,6 +1780,12 @@ span {
     padding: 20px;
     padding-top: 0;
   }
+  .team_section_text {
+    width: 100%;
+  }
+  .team_section_title {
+    width: 100%;
+  }
 }
 
 @media (max-width: 599px) {
@@ -1762,7 +1804,8 @@ span {
   .privacy_wrapper,
   .blogs_page_heading,
   .all_posts,
-  .positions {
+  .positions,
+  .team_section {
     width: auto;
   }
   .header {
@@ -1885,7 +1928,7 @@ span {
     margin: 0;
   }
   .blog_page_content_title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .privacy_policy {
     width: 100%;
@@ -1923,7 +1966,7 @@ span {
   }
 
   .svheader_title {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
   .position_title {
     font-size: 2.5rem;
@@ -1942,5 +1985,18 @@ span {
 
   .group_content {
     padding: 20px;
+    padding-top: 0;
+  }
+  .author_name2 {
+    margin-left: 0;
+  }
+  .blogs_page_wrapper {
+    padding-top: 50px;
+  }
+  .team_section_text {
+    width: 100%;
+  }
+  .team_section_title {
+    width: 100%;
   }
 }
