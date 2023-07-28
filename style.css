@@ -9,6 +9,9 @@ body {
   margin: 0;
   padding: 0;
 }
+a {
+  color: #000;
+}
 .main {
   width: 100%;
 }
@@ -181,9 +184,6 @@ button {
   margin-bottom: 40px;
 }
 
-.last_item {
-}
-
 .feature_content {
   display: flex;
   width: 100%;
@@ -224,7 +224,7 @@ button {
 }
 
 .footer_section {
-  background-color: #063255;
+  background-color: rgb(30, 48, 80);
   width: 100%;
 }
 
@@ -239,7 +239,7 @@ button {
   justify-content: space-between;
   align-items: start;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .footer_left {
@@ -250,6 +250,11 @@ button {
   line-height: 44px; /* 122.222% */
   letter-spacing: -1.08px;
   width: 30%;
+  margin-top: 50px;
+}
+
+.footer_left a img {
+  width: auto;
 }
 
 .footer_left h2 {
@@ -266,10 +271,17 @@ button {
   font-weight: 500;
   line-height: normal;
 }
+.other {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
 
-.other div,
+.other a,
 .connect_more div {
   margin-bottom: 10px;
+  margin-top: 10px;
+  color: #fff;
 }
 
 .connect_head,
@@ -308,7 +320,7 @@ button {
   color: #fff;
   justify-content: flex-end;
   margin-top: 30px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding-bottom: 30px;
   font-family: Poppins;
   font-size: 16px;
@@ -316,6 +328,17 @@ button {
   font-weight: 500;
   line-height: normal;
   max-width: 1280px;
+}
+.footer-bottom a {
+  color: #fff;
+  margin-right: 20px;
+}
+
+.footer-left,
+.company,
+.connect,
+.subscribe {
+  margin-top: 50px;
 }
 
 .allright {
@@ -545,6 +568,7 @@ span {
   font-weight: 600;
   line-height: 106.5%; /* 17.04px */
   text-transform: capitalize;
+  background: #fff;
 }
 .CTA_section {
   display: flex;
@@ -556,7 +580,7 @@ span {
   width: 50%; /* flex: 1; */
 }
 
-.cta_button {
+.bt {
   background-color: #dceaf5;
 }
 
@@ -670,7 +694,7 @@ span {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 180px;
+  width: 50%;
   max-width: 100%;
   background-color: #fff;
   transform: translateX(-100%);
@@ -1242,14 +1266,14 @@ input[type="email"] {
   background-color: #edf7ff;
   border: none;
   border-radius: 20px;
-
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
-#message {
+#message,
+#input_reason {
   padding: 10px 30px;
   margin-bottom: 10px;
   background-color: #edf7ff;
@@ -1264,14 +1288,21 @@ input[type="email"] {
 #message::placeholder,
 #first_name::placeholder,
 #last_name::placeholder,
-#mail_address::placeholder {
+#mail_address::placeholder,
+#input_reason::placeholder,
+#first_name_apply::placeholder,
+#last_name_apply::placeholder,
+#email_apply::placeholder,
+#mobile_apply::placeholder {
   color: #9c9c9c;
-
   font-size: 1rem;
   font-style: normal;
   font-weight: 1000;
   line-height: normal;
   font-family: Inter;
+}
+#input_reason {
+  width: 100%;
 }
 
 input[type="submit"] {
@@ -1366,6 +1397,37 @@ input[type="submit"] {
   font-weight: 500;
   line-height: 1cm;
 }
+
+#first_name_apply,
+#last_name_apply,
+#email_apply,
+#mobile_apply {
+  width: 100%;
+}
+.apply_title {
+  color: #0d1317;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+
+  letter-spacing: -1.44px;
+  margin-bottom: 50px;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+#email_footer {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#subscribe_button {
+  width: 40%;
+}
 @media (min-width: 740px) and (max-width: 1023px) {
   .navbar,
   .help_posts,
@@ -1384,7 +1446,8 @@ input[type="submit"] {
   .all_posts,
   .positions,
   .team_section,
-  .contact {
+  .contact,
+  .career_detail {
     width: auto;
   }
 
@@ -1623,6 +1686,9 @@ input[type="submit"] {
   input[type="submit"] {
     width: 100%;
   }
+  .jd {
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1239px) {
@@ -1643,7 +1709,8 @@ input[type="submit"] {
   .all_posts,
   .positions,
   .team_section,
-  .contact {
+  .contact,
+  .career_detail {
     width: 900px;
   }
 
@@ -1823,6 +1890,9 @@ input[type="submit"] {
   input[type="submit"] {
     width: 100%;
   }
+  .jd {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 739px) {
@@ -1846,7 +1916,8 @@ input[type="submit"] {
   .all_posts,
   .positions,
   .team_section,
-  .contact {
+  .contact,
+  .career_detail {
     width: auto;
   }
 
@@ -2071,9 +2142,28 @@ input[type="submit"] {
   input[type="submit"] {
     width: 100%;
   }
+  .jd {
+    flex-wrap: wrap;
+  }
+  .detail {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .apply_title {
+    margin-bottom: 20px;
+  }
+  .detail {
+    flex-wrap: wrap;
+  }
+  .job_title {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 599px) {
+  .navbar_right {
+    display: none;
+  }
   .navbar,
   .help_posts,
   .feature_section,
@@ -2091,8 +2181,13 @@ input[type="submit"] {
   .all_posts,
   .positions,
   .team_section,
-  .contact {
+  .contact,
+  .career_detail {
     width: auto;
+  }
+
+  .navbar_btn {
+    display: block;
   }
   .header {
     flex-wrap: wrap;
@@ -2317,5 +2412,48 @@ input[type="submit"] {
   }
   .form_section {
     width: 100%;
+  }
+  .detail {
+    padding: 20px;
+  }
+  .job_title {
+    margin-bottom: 50px;
+  }
+  .footer_left a img {
+    width: 100%;
+  }
+  .service {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .service_title {
+    width: 100%;
+  }
+  .service_text {
+    width: 100%;
+  }
+  .cta_text {
+    font-size: 2.5rem;
+  }
+  .subs {
+    flex-wrap: wrap;
+  }
+  .about_sub {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .subcontent {
+    width: 100%;
+    max-width: 100%;
+  }
+  .fea {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .header_content_sub1 {
+    width: 100%;
+  }
+  .feature_wrapper {
+    padding-top: 20px;
   }
 }
